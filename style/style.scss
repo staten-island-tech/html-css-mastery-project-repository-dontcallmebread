@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap);
+
 body{
     background-color: #fae3d9;
 }
@@ -13,18 +15,53 @@ body{
     display: flex;
     margin: 1rem;
     font-family: 'Trade Winds', cursive;
-    font-size: 6rem;
 }
 
 .title{
     position: absolute;
-    top: 24%;
-    left: 31%;
+    top: 32%;
+    left: 32%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
 
 .header-primary{
     color: white;
+    font-size: 9rem;
 }
 
+.no-animation{
+    margin: 10rem;
+}
+
+.header-secondary{
+    position: relative;
+    width: 24rem;
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.typewriter{
+    height: calc(100vh - 8em);
+    padding: 4rem;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Noto Serif JP', serif;
+}
+
+.anim-typewriter{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+                blinkTestCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+    from{border-right-color:  rgba(255, 255, 255, 0.75);}
+    to{border-right-color: transparent;}
+}
