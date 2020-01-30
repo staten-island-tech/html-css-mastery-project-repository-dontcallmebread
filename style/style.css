@@ -118,6 +118,12 @@ h1 {
   font-weight: normal;
 }
 
+.sightseeing-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .sightseeing-title span {
   position: relative;
   overflow: hidden;
@@ -210,5 +216,53 @@ h1 {
 
 .sightseeing-anim {
   background-color: white;
+  height: 2em;
+}
+
+.kyoto-flip-card {
+  background-color: transparent;
+  width: 24vw;
+  height: 96vh;
+  border: 1px solid #f1f1f1;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.kyoto-flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.kyoto-flip-card:hover .kyoto-flip-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.kyoto-flip-front, .kyoto-flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.kyoto-flip-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.kyoto-flip-back {
+  background-color: dodgerblue;
+  color: white;
+  -webkit-transform: translateY(180deg);
+          transform: translateY(180deg);
 }
 /*# sourceMappingURL=style.css.map */
