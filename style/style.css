@@ -109,6 +109,8 @@ body {
   height: 100vh;
   color: #000;
   font-family: 'Trade Winds', cursive;
+  background-image: url("blossoms.png");
+  background-size: 100vw 100vh;
 }
 
 h1 {

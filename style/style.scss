@@ -4,7 +4,7 @@ body{
     background-color: #fae3d9;
 }
 
-/* .header{
+.header{
     background-size: cover;
     background-position: center;
     background-image: url("castle.png");
@@ -15,7 +15,7 @@ body{
     display: flex;
     margin: 1rem;
     font-family: 'Trade Winds', cursive;
-} */
+} 
 
 .title{
     position: absolute;
@@ -74,7 +74,8 @@ body{
     height: 100vh;
     color: #000;
     font-family: 'Trade Winds', cursive;
-    background-image: url;
+    background-image: url("blossoms.png");
+    background-size: 100vw 100vh;
 }
 
 h1{
@@ -135,4 +136,8 @@ h1{
 .sightseeing-anim{
     background-color: white;
 
+}
+
+.kyoto-flip-card{
+    
 }
