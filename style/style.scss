@@ -69,6 +69,7 @@ body{
 .sightseeing{
     display: flex;
     justify-content: center;
+    align-items: center;
     overflow: hidden;
     width: 100vw;
     height: 100vh;
@@ -142,10 +143,19 @@ h1{
 .sightseeing-anim{
     background-color: white;
     height: 2em;
+}
 
+.flip-cards{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80%;
+    align-content: center;
+    justify-content: center;
 }
 
 .kyoto-flip-card{
+    display: flex;
     background-color: transparent;
     width: 24vw;
     height: 96vh;
