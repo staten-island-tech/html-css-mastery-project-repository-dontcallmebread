@@ -111,6 +111,13 @@ body {
   font-family: 'Trade Winds', cursive;
   background-image: url("blossoms.png");
   background-size: 100vw 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 h1 {
@@ -223,9 +230,6 @@ h1 {
   background-color: transparent;
   width: 24vw;
   height: 96vh;
-  border: 1px solid #f1f1f1;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
 }
 
 .kyoto-flip-inner {
@@ -255,14 +259,15 @@ h1 {
 }
 
 .kyoto-flip-front {
-  background-color: #bbb;
+  background-color: white;
   color: black;
 }
 
 .kyoto-flip-back {
   background-color: dodgerblue;
   color: white;
-  -webkit-transform: translateY(180deg);
-          transform: translateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
