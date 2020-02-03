@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap");
-@import "";
 
 body{
     background-color: #fae3d9;
@@ -29,9 +27,6 @@ body{
 .header-primary{
     color: white;
     font-size: 9rem;
-        @include tablet {
-            font-size: 5rem;
-        }
 }
 
 .no-animation{

@@ -1,69 +1,101 @@
-@import url(https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap);
 body {
   background-color: #fae3d9;
 }
 
-/* .header{
-    background-size: cover;
-    background-position: center;
-    background-image: url("castle.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 95vh;
-    width: 99%;
-    display: flex;
-    margin: 1rem;
-    font-family: 'Trade Winds', cursive;
-} 
-
-.title{
-    position: absolute;
-    top: 35%;
-    left: 32%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+.header {
+  background-size: cover;
+  background-position: center;
+  background-image: url("castle.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 95vh;
+  width: 99%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem;
+  font-family: 'Trade Winds', cursive;
 }
 
-.header-primary{
-    color: white;
-    font-size: 9rem;
+.title {
+  position: absolute;
+  top: 35%;
+  left: 32%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.no-animation{
-    margin: 10rem;
+.header-primary {
+  color: white;
+  font-size: 9rem;
 }
 
-.header-secondary{
-    position: relative;
-    width: 24rem;
-    margin: 0 auto;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);
-    font-size: 3rem;
-    font-family: 'Noto Serif JP', serif;
+.no-animation {
+  margin: 10rem;
 }
 
-.typewriter{
-    height: calc(100vh - 8em);
-    padding: 4rem;
-    color: rgba(255, 255, 255, 0.75);
-    font-family: 'Noto Serif JP', serif;
+.header-secondary {
+  position: relative;
+  width: 24rem;
+  margin: 0 auto;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 3rem;
+  font-family: 'Noto Serif JP', serif;
 }
 
-.anim-typewriter{
-    animation: typewriter 4s steps(44) 1s 1 normal both,
-                blinkTestCursor 500ms steps(44) infinite normal;
+.typewriter {
+  height: calc(100vh - 8em);
+  padding: 4rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: 'Noto Serif JP', serif;
 }
-@keyframes typewriter{
-    from{width: 0;}
-    to{width: 24em;}
+
+.anim-typewriter {
+  -webkit-animation: typewriter 4s steps(44) 1s 1 normal both, blinkTestCursor 500ms steps(44) infinite normal;
+          animation: typewriter 4s steps(44) 1s 1 normal both, blinkTestCursor 500ms steps(44) infinite normal;
 }
-@keyframes blinkTextCursor{
-    from{border-right-color:  rgba(255, 255, 255, 0.75);}
-    to{border-right-color: transparent;}
-} */
+
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+
+@-webkit-keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
 .sightseeing {
   display: -webkit-box;
   display: -ms-flexbox;
