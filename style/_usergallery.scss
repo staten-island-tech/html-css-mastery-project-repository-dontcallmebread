@@ -1,4 +1,4 @@
-@import "_variables.scss";
+@import "style/_variables";
 
 .header{
     display: flex;
@@ -10,7 +10,7 @@
     }
 }
 
-.user-galley-header{
+.title{
     font-size: 2rem;
     color: white;
     text-transform: uppercase;
