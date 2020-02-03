@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap);
+/* @import "_header.scss"; */
 
 body{
     background-color: #fae3d9;
@@ -28,6 +29,9 @@ body{
 .header-primary{
     color: white;
     font-size: 9rem;
+        @include tablet {
+            font-size: 5rem;
+        }
 }
 
 .no-animation{
@@ -64,7 +68,7 @@ body{
 @keyframes blinkTextCursor{
     from{border-right-color:  rgba(255, 255, 255, 0.75);}
     to{border-right-color: transparent;}
-}
+} 
 
 .sightseeing{
     display: flex;
