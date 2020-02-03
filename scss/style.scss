@@ -17,6 +17,7 @@ body{
     font-family: 'Trade Winds', cursive;
         @include tablet{
             background-attachment: scroll;
+            width: 96%;
         }
 } 
 
@@ -26,10 +27,9 @@ body{
     left: 32%;
     transform: translate(-50%, -50%);
     text-align: center;
-        @include tablet{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        @include tablet {
+            top: 24%;
+            left: 46%;
         }
 }
 
