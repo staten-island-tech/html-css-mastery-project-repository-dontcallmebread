@@ -17,6 +17,12 @@ body {
   font-family: 'Trade Winds', cursive;
 }
 
+@media (min-width: 600px) {
+  .header {
+    background-attachment: scroll;
+  }
+}
+
 .title {
   position: absolute;
   top: 35%;
@@ -24,6 +30,20 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
+}
+
+@media (min-width: 600px) {
+  .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .header-primary {
