@@ -1,3 +1,4 @@
+@import"_variable.scss";
 
 body{
     background-color: #fae3d9;
@@ -27,6 +28,9 @@ body{
 .header-primary{
     color: white;
     font-size: 9rem;
+        @include tablet{
+            font-size: 6rem;
+        }
 }
 
 .no-animation{

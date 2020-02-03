@@ -31,6 +31,12 @@ body {
   font-size: 9rem;
 }
 
+@media (min-width: 600px) {
+  .header-primary {
+    font-size: 6rem;
+  }
+}
+
 .no-animation {
   margin: 10rem;
 }
