@@ -17,6 +17,12 @@ body {
   font-family: 'Trade Winds', cursive;
 }
 
+@media (max-width: 1280px) {
+  .header {
+    background-attachment: scroll;
+  }
+}
+
 @media (max-width: 780px) {
   .header {
     background-attachment: scroll;
