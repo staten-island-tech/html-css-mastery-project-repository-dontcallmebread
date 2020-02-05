@@ -171,3 +171,46 @@ h1{
 .tokyopic{
     width: 100%;
 }
+
+.hiroshima-flip-card{
+    display: flex;
+    background-color: transparent;
+    width: 24vw;
+    height: 96vh;
+}
+
+.hiroshima-flip-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d; 
+}
+
+.hiroshima-flip-card:hover .hiroshima-flip-inner {
+    transform: rotateY(180deg);
+}
+
+.hiroshima-flip-front, .hiroshima-flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.hiroshima-flip-front{
+    background-color: white;
+    color: black;
+}
+
+.hiroshima-flip-back{
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+    height: 100%;
+}
+
+.hiroshimapic{
+    width: 100%;
+}
