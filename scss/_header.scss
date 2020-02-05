@@ -1,0 +1,93 @@
+.header{
+    background-size: cover;
+    background-position: center;
+    background-image: url("castle.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 95vh;
+    width: 99%;
+    display: flex;
+    margin: 1rem;
+    font-family: 'Trade Winds', cursive;
+        @include laptop{
+            background-attachment: scroll;
+        }
+        @include tablet{
+            background-attachment:  scroll;
+            width: 723px;
+        }
+         @include phone{
+            width: 100%;
+            margin: 0;
+            background-attachment: scroll;
+        } 
+} 
+
+.title{
+    position: absolute;
+    top: 35%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+        @include tablet{
+            top: 23%;
+            left: 40%;
+        }
+        @include phone{
+            top: 20%;
+            left: 51%;
+        }
+}
+
+.header-primary{
+    color: white;
+    font-size: 9rem;
+        @include tablet{
+            font-size: 7rem;
+        }
+        @include phone{
+            font-size: 6rem;
+        }
+}
+
+.no-animation{
+    margin: 10rem;
+}
+
+.header-secondary{
+    position: relative;
+    width: 24rem;
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    font-family: 'Noto Serif JP', serif;
+        @include tablet{
+            font-size: 3rem;
+        }
+        @include phone{
+            font-size: 2rem;
+        }
+}
+
+.typewriter{
+    height: calc(100vh - 8em);
+    padding: 4rem;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Noto Serif JP', serif;
+}
+
+.anim-typewriter{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+                blinkTestCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+    from{border-right-color:  rgba(255, 255, 255, 0.75);}
+    to{border-right-color: transparent;}
+} 
