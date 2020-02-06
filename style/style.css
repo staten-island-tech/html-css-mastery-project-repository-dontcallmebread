@@ -22,6 +22,12 @@
   align-items: center;
 }
 
+@media (max-width: 780px) {
+  .sightseeing {
+    background-image: url("whiteflowers.png");
+  }
+}
+
 h1 {
   font-size: 4em;
   font-weight: normal;
@@ -31,6 +37,12 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 780px) {
+  .sightseeing-title {
+    margin: 2rem;
+  }
 }
 
 .sightseeing-title span {
@@ -151,7 +163,13 @@ h1 {
   display: flex;
   background-color: transparent;
   width: 24vw;
-  height: 96vh;
+  height: 97vh;
+}
+
+@media (max-width: 780px) {
+  .kyoto-flip-card {
+    height: 35vh;
+  }
 }
 
 .kyoto-flip-inner {
@@ -181,7 +199,6 @@ h1 {
 }
 
 .kyoto-flip-front {
-  background-color: white;
   color: black;
 }
 
@@ -195,12 +212,7 @@ h1 {
 
 .kyotopic {
   width: 100%;
-}
-
-@media (max-width: 780px) {
-  .kyotopic {
-    height: 35%;
-  }
+  height: 100%;
 }
 
 .tokyo-flip-card {
@@ -209,7 +221,13 @@ h1 {
   display: flex;
   background-color: transparent;
   width: 24vw;
-  height: 96vh;
+  height: 97vh;
+}
+
+@media (max-width: 780px) {
+  .tokyo-flip-card {
+    height: 35vh;
+  }
 }
 
 .tokyo-flip-inner {
@@ -239,7 +257,6 @@ h1 {
 }
 
 .tokyo-flip-front {
-  background-color: white;
   color: black;
 }
 
@@ -253,12 +270,7 @@ h1 {
 
 .tokyopic {
   width: 100%;
-}
-
-@media (max-width: 780px) {
-  .tokyopic {
-    height: 35%;
-  }
+  height: 100%;
 }
 
 .hiroshima-flip-card {
@@ -267,7 +279,13 @@ h1 {
   display: flex;
   background-color: transparent;
   width: 24vw;
-  height: 96vh;
+  height: 97vh;
+}
+
+@media (max-width: 780px) {
+  .hiroshima-flip-card {
+    height: 35vh;
+  }
 }
 
 .hiroshima-flip-inner {
@@ -297,7 +315,6 @@ h1 {
 }
 
 .hiroshima-flip-front {
-  background-color: white;
   color: black;
 }
 
@@ -311,12 +328,7 @@ h1 {
 
 .hiroshimapic {
   width: 100%;
-}
-
-@media (max-width: 780px) {
-  .hiroshimapic {
-    height: 35%;
-  }
+  height: 100%;
 }
 
 .header {
