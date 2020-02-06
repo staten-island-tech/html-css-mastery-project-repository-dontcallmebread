@@ -127,6 +127,9 @@ h1{
 
 .kyotopic{
     width: 100%;
+        @include tablet{
+            height: 35%;
+        }
 }
 
 .tokyo-flip-card{
@@ -170,6 +173,9 @@ h1{
 
 .tokyopic{
     width: 100%;
+        @include tablet{
+            height: 35%;
+        }
 }
 
 .hiroshima-flip-card{
@@ -213,4 +219,7 @@ h1{
 
 .hiroshimapic{
     width: 100%;
-}
+        @include tablet{
+            height: 35%;
+        }
+} 

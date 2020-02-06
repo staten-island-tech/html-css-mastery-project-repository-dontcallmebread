@@ -11,6 +11,7 @@
     font-family: 'Trade Winds', cursive;
         @include laptop{
             background-attachment: scroll;
+            width: 98%;
         }
         @include tablet{
             background-attachment:  scroll;
