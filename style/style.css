@@ -25,6 +25,7 @@
 @media (max-width: 780px) {
   .sightseeing {
     background-image: url("whiteflowers.png");
+    width: 99%;
   }
 }
 
@@ -203,7 +204,7 @@ h1 {
 }
 
 .kyoto-flip-back {
-  background-color: dodgerblue;
+  background-color: #eab0d9;
   color: white;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
@@ -261,7 +262,7 @@ h1 {
 }
 
 .tokyo-flip-back {
-  background-color: dodgerblue;
+  background-color: #eab0d9;
   color: white;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
@@ -319,7 +320,7 @@ h1 {
 }
 
 .hiroshima-flip-back {
-  background-color: dodgerblue;
+  background-color: #eab0d9;
   color: white;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
@@ -329,6 +330,16 @@ h1 {
 .hiroshimapic {
   width: 100%;
   height: 100%;
+}
+
+.sightseeing-text {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 5rem;
+}
+
+.info {
+  font-size: 1.5rem;
+  font-family: 'Courgette', cursive;
 }
 
 .header {
