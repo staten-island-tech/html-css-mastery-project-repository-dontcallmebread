@@ -11,20 +11,20 @@
     background-size: 100vw 100vh;
     flex-direction: column;
     align-items: center;
-    @include tablet{
-        background-image: url("whiteflowers.png");
-        width: 99%;
-    }
-}
+        @include tablet{
+            background-image: url("whiteflowers.png");
+            width: 99%;
+        }
+}   
 
 h1{
     font-size: 4rem;
     font-weight: normal;
-        @include tablet{
-            font-size: 3rem;
-        }
         @include phone{ 
             font-size: 1.6rem;
+        }
+        @include tablet{
+            font-size: 3rem;
         }
 } 
 
@@ -155,6 +155,17 @@ h1{
         }
 }
 
+.kyoto-name{
+    @include tablet{
+        font-size: 2rem;
+        margin: 0.5rem;
+        font-family: 'Special Elite', cursive;
+    }
+    @include laptop{
+        
+    }
+}
+
 .tokyo-flip-card{
     display: flex;
     background-color: transparent;
@@ -206,6 +217,14 @@ h1{
         @include phone{ 
             width: 150%;
         }
+}
+
+.tokyo-name{
+    @include tablet{
+        font-size: 2rem;
+        margin: 0.5rem;
+        font-family: 'Special Elite', cursive;;
+    }
 }
 
 .hiroshima-flip-card{
@@ -261,6 +280,14 @@ h1{
         }
 } 
 
+.hiroshima-name{
+    @include tablet{
+        font-size: 2rem;
+        margin: 0.5rem;
+        font-family: 'Special Elite', cursive;
+    }
+}
+
 .sightseeing-text{
     font-family: 'Permanent Marker', cursive;
     font-size: 5rem;
@@ -301,6 +328,6 @@ h1{
 
 .head{
     @include tablet{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 }

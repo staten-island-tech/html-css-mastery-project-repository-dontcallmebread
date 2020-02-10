@@ -34,15 +34,15 @@ h1 {
   font-weight: normal;
 }
 
-@media (max-width: 780px) {
-  h1 {
-    font-size: 3rem;
-  }
-}
-
 @media (max-width: 375px) {
   h1 {
     font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 780px) {
+  h1 {
+    font-size: 3rem;
   }
 }
 
@@ -250,6 +250,14 @@ h1 {
   }
 }
 
+@media (max-width: 780px) {
+  .kyoto-name {
+    font-size: 2rem;
+    margin: 0.5rem;
+    font-family: 'Special Elite', cursive;
+  }
+}
+
 .tokyo-flip-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -318,6 +326,14 @@ h1 {
 @media (max-width: 375px) {
   .tokyopic {
     width: 150%;
+  }
+}
+
+@media (max-width: 780px) {
+  .tokyo-name {
+    font-size: 2rem;
+    margin: 0.5rem;
+    font-family: 'Special Elite', cursive;
   }
 }
 
@@ -392,6 +408,14 @@ h1 {
   }
 }
 
+@media (max-width: 780px) {
+  .hiroshima-name {
+    font-size: 2rem;
+    margin: 0.5rem;
+    font-family: 'Special Elite', cursive;
+  }
+}
+
 .sightseeing-text {
   font-family: 'Permanent Marker', cursive;
   font-size: 5rem;
@@ -450,7 +474,7 @@ h1 {
 
 @media (max-width: 780px) {
   .head {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -469,10 +493,11 @@ h1 {
   font-family: 'Trade Winds', cursive;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 375px) {
   .header {
+    width: 100%;
+    margin: 0;
     background-attachment: scroll;
-    width: 98%;
   }
 }
 
@@ -483,11 +508,10 @@ h1 {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1280px) {
   .header {
-    width: 100%;
-    margin: 0;
     background-attachment: scroll;
+    width: 98%;
   }
 }
 
@@ -500,17 +524,17 @@ h1 {
   text-align: center;
 }
 
-@media (max-width: 780px) {
-  .title {
-    top: 23%;
-    left: 40%;
-  }
-}
-
 @media (max-width: 375px) {
   .title {
     top: 20%;
     left: 51%;
+  }
+}
+
+@media (max-width: 780px) {
+  .title {
+    top: 23%;
+    left: 40%;
   }
 }
 
@@ -519,15 +543,15 @@ h1 {
   font-size: 9rem;
 }
 
-@media (max-width: 780px) {
-  .header-primary {
-    font-size: 7rem;
-  }
-}
-
 @media (max-width: 375px) {
   .header-primary {
     font-size: 6rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .header-primary {
+    font-size: 7rem;
   }
 }
 
@@ -548,15 +572,15 @@ h1 {
   font-family: 'Noto Serif JP', serif;
 }
 
-@media (max-width: 780px) {
-  .header-secondary {
-    font-size: 3rem;
-  }
-}
-
 @media (max-width: 375px) {
   .header-secondary {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .header-secondary {
+    font-size: 3rem;
   }
 }
 

@@ -9,19 +9,19 @@
     display: flex;
     margin: 1rem;
     font-family: 'Trade Winds', cursive;
-        @include laptop{
-            background-attachment: scroll;
-            width: 98%;
-        }
-        @include tablet{
-            background-attachment:  scroll;
-            width: 723px;
-        }
          @include phone{
             width: 100%;
             margin: 0;
             background-attachment: scroll;
         } 
+        @include tablet{
+            background-attachment:  scroll;
+            width: 723px;
+        }
+        @include laptop{
+            background-attachment: scroll;
+            width: 98%;
+        }
 } 
 
 .title{
@@ -30,24 +30,24 @@
     left: 32%;
     transform: translate(-50%, -50%);
     text-align: center;
-        @include tablet{
-            top: 23%;
-            left: 40%;
-        }
         @include phone{
             top: 20%;
             left: 51%;
+        }
+        @include tablet{
+            top: 23%;
+            left: 40%;
         }
 }
 
 .header-primary{
     color: white;
     font-size: 9rem;
-        @include tablet{
-            font-size: 7rem;
-        }
         @include phone{
             font-size: 6rem;
+        }
+        @include tablet{
+            font-size: 7rem;
         }
 }
 
@@ -65,11 +65,11 @@
     transform: translateY(-50%);
     font-size: 3rem;
     font-family: 'Noto Serif JP', serif;
-        @include tablet{
-            font-size: 3rem;
-        }
         @include phone{
             font-size: 2rem;
+        }
+        @include tablet{
+            font-size: 3rem;
         }
 }
 
