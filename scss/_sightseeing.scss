@@ -26,7 +26,7 @@ h1{
         @include phone{ 
             font-size: 1.6rem;
         }
-}
+} 
 
 .sightseeing-title{
     display: flex;
@@ -264,11 +264,17 @@ h1{
 .sightseeing-text{
     font-family: 'Permanent Marker', cursive;
     font-size: 5rem;
+        @include tablet{
+            font-size: 3rem;
+        }
 }
 
 .info{
     font-size: 1.5rem;
     font-family: 'Courgette', cursive;
+        @include tablet{
+            font-size: 0.5rem;
+        }
 }
 
 .kyotokyo{
