@@ -1,9 +1,9 @@
 @import"_variable.scss";
 @import"_sightseeing.scss";
 @import"_header.scss";
-
+@import"_food.scss";
 
 body{
-    background-color: #fae3d9;
+    background-color: rgba(color(background), 1.0);
 }
 

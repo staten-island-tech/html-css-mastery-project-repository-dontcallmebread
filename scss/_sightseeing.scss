@@ -20,11 +20,11 @@
 h1{
     font-size: 4rem;
     font-weight: normal;
-        @include phone{ 
-            font-size: 1.6rem;
-        }
         @include tablet{
             font-size: 3rem;
+        }
+        @include phone{ 
+            font-size: 1.6rem;
         }
 } 
 
@@ -99,6 +99,7 @@ h1{
     justify-content: space-evenly;
         @include phone{
             flex-direction: column;
+            margin-left: 65%;
         }
 }
 
@@ -109,6 +110,9 @@ h1{
     height: 97vh;
         @include tablet{
             height: 35vh;
+        }
+        @include phone{
+            width: 36vw;
         }
 }
 
@@ -138,6 +142,9 @@ h1{
             background-color: white;
             height: 78%;
         }
+        @include phone{
+            height: 85%;          
+        }
 }
 
 .kyoto-flip-back{
@@ -150,20 +157,21 @@ h1{
 .kyotopic{
     width: 100%;
     height: 100%;
-        @include phone{ 
-            width: 150%;
-        }
 }
 
 .kyoto-name{
-    @include tablet{
-        font-size: 2rem;
-        margin: 0.5rem;
-        font-family: 'Special Elite', cursive;
-    }
-    @include laptop{
-        
-    }
+    font-family: 'Special Elite', cursive;
+        @include laptop{
+            margin: 1.25rem;
+        }
+        @include tablet{
+            font-size: 2rem;
+            margin: 0.5rem;
+        }
+        @include phone{
+            font-size: 1.5rem;
+            margin: 0;
+        }
 }
 
 .tokyo-flip-card{
@@ -173,6 +181,9 @@ h1{
     height: 97vh;
         @include tablet{
             height: 35vh;
+        }
+        @include phone{
+            width: 36vw;
         }
 }
 
@@ -202,6 +213,9 @@ h1{
             background-color: white;
             height: 78%;
         }
+        @include phone{
+            height: 85%;
+        }
 }
 
 .tokyo-flip-back{
@@ -214,17 +228,21 @@ h1{
 .tokyopic{
     width: 100%;
     height: 100%;
-        @include phone{ 
-            width: 150%;
-        }
 }
 
 .tokyo-name{
-    @include tablet{
-        font-size: 2rem;
-        margin: 0.5rem;
-        font-family: 'Special Elite', cursive;;
-    }
+    font-family: 'Special Elite', cursive;
+        @include laptop{
+            margin: 1.25rem;
+        }
+        @include tablet{
+            font-size: 2rem;
+            margin: 0.5rem;
+        }
+        @include phone{
+            font-size: 1.5rem;
+            margin: 0;
+        }
 }
 
 .hiroshima-flip-card{
@@ -234,6 +252,9 @@ h1{
     height: 97vh;
         @include tablet{
             height: 35vh;
+        }
+        @include phone{
+            width: 36vw;
         }
 }
 
@@ -263,6 +284,9 @@ h1{
             background-color: white;
             height: 78%;
         }
+        @include phone{
+            height: 85%;
+        }
 }
 
 .hiroshima-flip-back{
@@ -275,17 +299,22 @@ h1{
 .hiroshimapic{
     width: 100%;
     height: 100%;
-        @include phone{
-            width: 150%;
-        }
 } 
 
 .hiroshima-name{
-    @include tablet{
-        font-size: 2rem;
-        margin: 0.5rem;
-        font-family: 'Special Elite', cursive;
-    }
+    font-family: 'Special Elite', cursive;
+        @include laptop{
+            margin: 1.25rem;
+            font-size: 3.25rem;
+        }
+        @include tablet{
+            font-size: 2rem;
+            margin: 0.5rem;
+        }
+        @include phone{
+            font-size: 1.5rem;
+            margin: 0;
+        }
 }
 
 .sightseeing-text{

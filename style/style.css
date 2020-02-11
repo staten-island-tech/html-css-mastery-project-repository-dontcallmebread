@@ -34,15 +34,15 @@ h1 {
   font-weight: normal;
 }
 
-@media (max-width: 375px) {
-  h1 {
-    font-size: 1.6rem;
-  }
-}
-
 @media (max-width: 780px) {
   h1 {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 1.6rem;
   }
 }
 
@@ -176,6 +176,7 @@ h1 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: 65%;
   }
 }
 
@@ -191,6 +192,12 @@ h1 {
 @media (max-width: 780px) {
   .kyoto-flip-card {
     height: 35vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .kyoto-flip-card {
+    width: 36vw;
   }
 }
 
@@ -231,6 +238,12 @@ h1 {
   }
 }
 
+@media (max-width: 375px) {
+  .kyoto-flip-front {
+    height: 85%;
+  }
+}
+
 .kyoto-flip-back {
   background-color: #eab0d9;
   color: white;
@@ -244,9 +257,13 @@ h1 {
   height: 100%;
 }
 
-@media (max-width: 375px) {
-  .kyotopic {
-    width: 150%;
+.kyoto-name {
+  font-family: 'Special Elite', cursive;
+}
+
+@media (max-width: 1280px) {
+  .kyoto-name {
+    margin: 1.25rem;
   }
 }
 
@@ -254,7 +271,13 @@ h1 {
   .kyoto-name {
     font-size: 2rem;
     margin: 0.5rem;
-    font-family: 'Special Elite', cursive;
+  }
+}
+
+@media (max-width: 375px) {
+  .kyoto-name {
+    font-size: 1.5rem;
+    margin: 0;
   }
 }
 
@@ -270,6 +293,12 @@ h1 {
 @media (max-width: 780px) {
   .tokyo-flip-card {
     height: 35vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .tokyo-flip-card {
+    width: 36vw;
   }
 }
 
@@ -310,6 +339,12 @@ h1 {
   }
 }
 
+@media (max-width: 375px) {
+  .tokyo-flip-front {
+    height: 85%;
+  }
+}
+
 .tokyo-flip-back {
   background-color: #eab0d9;
   color: white;
@@ -323,9 +358,13 @@ h1 {
   height: 100%;
 }
 
-@media (max-width: 375px) {
-  .tokyopic {
-    width: 150%;
+.tokyo-name {
+  font-family: 'Special Elite', cursive;
+}
+
+@media (max-width: 1280px) {
+  .tokyo-name {
+    margin: 1.25rem;
   }
 }
 
@@ -333,7 +372,13 @@ h1 {
   .tokyo-name {
     font-size: 2rem;
     margin: 0.5rem;
-    font-family: 'Special Elite', cursive;
+  }
+}
+
+@media (max-width: 375px) {
+  .tokyo-name {
+    font-size: 1.5rem;
+    margin: 0;
   }
 }
 
@@ -349,6 +394,12 @@ h1 {
 @media (max-width: 780px) {
   .hiroshima-flip-card {
     height: 35vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .hiroshima-flip-card {
+    width: 36vw;
   }
 }
 
@@ -389,6 +440,12 @@ h1 {
   }
 }
 
+@media (max-width: 375px) {
+  .hiroshima-flip-front {
+    height: 85%;
+  }
+}
+
 .hiroshima-flip-back {
   background-color: #eab0d9;
   color: white;
@@ -402,9 +459,14 @@ h1 {
   height: 100%;
 }
 
-@media (max-width: 375px) {
-  .hiroshimapic {
-    width: 150%;
+.hiroshima-name {
+  font-family: 'Special Elite', cursive;
+}
+
+@media (max-width: 1280px) {
+  .hiroshima-name {
+    margin: 1.25rem;
+    font-size: 3.25rem;
   }
 }
 
@@ -412,7 +474,13 @@ h1 {
   .hiroshima-name {
     font-size: 2rem;
     margin: 0.5rem;
-    font-family: 'Special Elite', cursive;
+  }
+}
+
+@media (max-width: 375px) {
+  .hiroshima-name {
+    font-size: 1.5rem;
+    margin: 0;
   }
 }
 
@@ -493,11 +561,10 @@ h1 {
   font-family: 'Trade Winds', cursive;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1280px) {
   .header {
-    width: 100%;
-    margin: 0;
     background-attachment: scroll;
+    width: 98%;
   }
 }
 
@@ -508,10 +575,11 @@ h1 {
   }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 375px) {
   .header {
+    width: 100%;
+    margin: 0;
     background-attachment: scroll;
-    width: 98%;
   }
 }
 
@@ -524,17 +592,17 @@ h1 {
   text-align: center;
 }
 
-@media (max-width: 375px) {
-  .title {
-    top: 20%;
-    left: 51%;
-  }
-}
-
 @media (max-width: 780px) {
   .title {
     top: 23%;
     left: 40%;
+  }
+}
+
+@media (max-width: 375px) {
+  .title {
+    top: 20%;
+    left: 51%;
   }
 }
 
@@ -543,15 +611,15 @@ h1 {
   font-size: 9rem;
 }
 
-@media (max-width: 375px) {
-  .header-primary {
-    font-size: 6rem;
-  }
-}
-
 @media (max-width: 780px) {
   .header-primary {
     font-size: 7rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .header-primary {
+    font-size: 6rem;
   }
 }
 
@@ -572,15 +640,15 @@ h1 {
   font-family: 'Noto Serif JP', serif;
 }
 
-@media (max-width: 375px) {
-  .header-secondary {
-    font-size: 2rem;
-  }
-}
-
 @media (max-width: 780px) {
   .header-secondary {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .header-secondary {
+    font-size: 2rem;
   }
 }
 
@@ -632,6 +700,32 @@ h1 {
   }
 }
 
+.food {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(street.png);
+  background-size: 100vw 100vh;
+}
+
+/* .sightseeing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    color: #000;
+    font-family: 'Trade Winds', cursive;
+    background-image: url("blossoms.png");
+    background-size: 100vw 100vh;
+    flex-direction: column;
+    align-items: center;
+        @include tablet{
+            background-image: url("whiteflowers.png");
+            width: 99%;
+        }
+}    */
 body {
   background-color: #fae3d9;
 }
