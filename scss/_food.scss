@@ -6,10 +6,23 @@
     font-family: 'Trade Winds', cursive;
     color: white;
     justify-content: center;
+        @include laptop{
+            background-size: 1280px 950px ;
+        }
+        @include tablet{
+            background-size: 768px 1024px;
+            background-image: url(street-cut.png);
+        }
 }
 
 .ft{
     font-size: 8rem;
+        @include laptop{
+            font-size: 6rem;
+        }
+        @include tablet{
+            font-size: 5rem;
+        }
 }
 
 /* .sightseeing{

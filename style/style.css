@@ -20,7 +20,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 @media (max-width: 780px) {
@@ -715,8 +715,33 @@ h1 {
           justify-content: center;
 }
 
+@media (max-width: 1280px) {
+  .food {
+    background-size: 1280px 950px;
+  }
+}
+
+@media (max-width: 780px) {
+  .food {
+    background-size: 768px 1024px;
+    background-image: url(street-cut.png);
+  }
+}
+
 .ft {
   font-size: 8rem;
+}
+
+@media (max-width: 1280px) {
+  .ft {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .ft {
+    font-size: 5rem;
+  }
 }
 
 /* .sightseeing{
