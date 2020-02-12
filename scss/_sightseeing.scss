@@ -16,6 +16,10 @@
             background-image: url("whiteflowers.png");
             width: 99%;
         }
+        @include phone{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
 }   
 
 h1{
