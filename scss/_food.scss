@@ -5,7 +5,6 @@
     width: 100vw;
     font-family: 'Trade Winds', cursive;
     color: white;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
         @include laptop{
@@ -19,6 +18,19 @@
             background-image: url(street-cut2.png);
             background-size: 375px 812px;
             width: 99%;
+        }
+}
+
+.food-title{
+    margin-bottom: -6rem;
+    margin-top: -4rem;
+        @include laptop{
+            margin-top: -2rem;
+            margin-bottom: -3rem;
+        }
+        @include phone{
+            margin-top: -0.5rem;
+            margin-bottom: -1rem;
         }
 }
 
@@ -38,6 +50,9 @@
 .osaka-bubble{
     display: flex;
     position: relative;
+        @include tablet{
+            flex-direction: column;
+        }
 }
 
 .osaka-circle{
@@ -50,6 +65,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+        @include laptop{
+            height: 28vh;
+            width: 20vw;
+        }
+        @include tablet{
+            height: 22vh;
+            width: 28vw;
+        }
+        @include phone{
+            height: 20vh;
+            width: 40vw;
+        }
 }
 
 .osaka-name{
@@ -57,14 +84,34 @@
     font-family: 'Chewy', cursive;
     text-transform: uppercase;
     font-size: 5rem;
+        @include tablet{
+            font-size: 4.5rem;
+        }
+        @include phone{
+            font-size: 3.5rem;
+        }
 }
 
 .osaka-rectangle{
+    display: flex;
+    align-items: center;
     height: 75vh;
     width: 14vw;
     background-color: wheat;
+        @include laptop{
+            width: 20vw;
+        }
+        @include tablet{
+            width: 28vw;
+        }
+        @include phone{
+            width: 40vw;
+        }
 }
 
 .osaka-info{
     font-size: 1rem;
+        @include phone{
+            font-size: 0.75rem;
+        }
 }
