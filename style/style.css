@@ -747,6 +747,21 @@ h1 {
   }
 }
 
+.food-bubbles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 90vh;
+  width: 99%;
+}
+
 .food-title {
   margin-bottom: -6rem;
   margin-top: -4rem;
@@ -804,11 +819,20 @@ h1 {
   }
 }
 
+@media (max-width: 375px) {
+  .osaka-bubble {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .osaka-circle {
   position: absolute;
   height: 28vh;
   width: 14vw;
-  background-color: white;
+  background-color: #fe6845;
   border-radius: 50%;
   display: inline-block;
   display: -webkit-box;
@@ -898,6 +922,262 @@ h1 {
 
 @media (max-width: 375px) {
   .osaka-info {
+    font-size: 0.75rem;
+  }
+}
+
+.hokkaido-bubble {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+@media (max-width: 780px) {
+  .hokkaido-bubble {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 75vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .hokkaido-bubble {
+    height: 75vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.hokkaido-circle {
+  position: absolute;
+  height: 28vh;
+  width: 14vw;
+  background-color: #fe6845;
+  border-radius: 50%;
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1280px) {
+  .hokkaido-circle {
+    height: 28vh;
+    width: 20vw;
+  }
+}
+
+@media (max-width: 780px) {
+  .hokkaido-circle {
+    height: 22vh;
+    width: 28vw;
+  }
+}
+
+@media (max-width: 375px) {
+  .hokkaido-circle {
+    height: 20vh;
+    width: 40vw;
+  }
+}
+
+.hokkaido-name {
+  color: black;
+  font-family: 'Chewy', cursive;
+  text-transform: uppercase;
+  font-size: 3.8rem;
+}
+
+@media (max-width: 780px) {
+  .hokkaido-name {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .hokkaido-name {
+    font-size: 2.2rem;
+  }
+}
+
+.hokkaido-rectangle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75vh;
+  width: 14vw;
+  background-color: skyblue;
+}
+
+@media (max-width: 1280px) {
+  .hokkaido-rectangle {
+    width: 20vw;
+  }
+}
+
+@media (max-width: 780px) {
+  .hokkaido-rectangle {
+    width: 28vw;
+  }
+}
+
+@media (max-width: 375px) {
+  .hokkaido-rectangle {
+    width: 40vw;
+  }
+}
+
+.hokkaido-info {
+  font-size: 1rem;
+}
+
+@media (max-width: 375px) {
+  .hokkaido-info {
+    font-size: 0.75rem;
+  }
+}
+
+.fukuoka-bubble {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+@media (max-width: 780px) {
+  .fukuoka-bubble {
+    height: 75vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+@media (max-width: 375px) {
+  .fukuoka-bubble {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.fukuoka-circle {
+  position: absolute;
+  height: 28vh;
+  width: 14vw;
+  background-color: #fe6845;
+  border-radius: 50%;
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1280px) {
+  .fukuoka-circle {
+    height: 28vh;
+    width: 20vw;
+  }
+}
+
+@media (max-width: 780px) {
+  .fukuoka-circle {
+    height: 22vh;
+    width: 28vw;
+  }
+}
+
+@media (max-width: 375px) {
+  .fukuoka-circle {
+    height: 20vh;
+    width: 40vw;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+.fukuoka-name {
+  color: black;
+  font-family: 'Chewy', cursive;
+  text-transform: uppercase;
+  font-size: 4.2rem;
+}
+
+@media (max-width: 780px) {
+  .fukuoka-name {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .fukuoka-name {
+    font-size: 2.4rem;
+  }
+}
+
+.fukuoka-rectangle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75vh;
+  width: 14vw;
+  background-color: wheat;
+}
+
+@media (max-width: 1280px) {
+  .fukuoka-rectangle {
+    width: 20vw;
+  }
+}
+
+@media (max-width: 780px) {
+  .fukuoka-rectangle {
+    width: 28vw;
+  }
+}
+
+@media (max-width: 375px) {
+  .fukuoka-rectangle {
+    width: 40vw;
+  }
+}
+
+.fukuoka-info {
+  font-size: 1rem;
+}
+
+@media (max-width: 375px) {
+  .fukuoka-info {
     font-size: 0.75rem;
   }
 }
