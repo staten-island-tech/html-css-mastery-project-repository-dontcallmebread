@@ -58,11 +58,14 @@
 .osaka-bubble{
     display: flex;
     position: relative;
+    height: 75vh;
+    align-items: center;
         @include tablet{
             flex-direction: column;
         }
         @include phone{
             flex-direction: row;
+            align-items: flex-start;
         }
 }
 
@@ -91,7 +94,7 @@
 }
 
 .osaka-name{
-    color: black;
+    color: white;
     font-family: 'Chewy', cursive;
     text-transform: uppercase;
     font-size: 5rem;
@@ -107,8 +110,12 @@
     display: flex;
     align-items: center;
     height: 75vh;
-    width: 14vw;
-    background-color: wheat;
+    width: 14vw; 
+    background-color: rgba(color(autumn-dark), 1.0);
+    opacity: 0;
+    height: 0;
+    width: 0;
+    display: none; 
         @include laptop{
             width: 20vw;
         }
@@ -119,9 +126,28 @@
             width: 40vw;
         }
 }
+.osaka-circle:hover .osaka-rectangle{
+    opacity: 1;
+    height: 75vh;
+    width: auto;
+    display: block;
+}
+
+.osaka-circle:hover{
+    opacity: 0;
+    height: 0;
+    width: 0;
+    display: none;
+}
 
 .osaka-info{
-    font-size: 1rem;
+    font-size: 1.1rem;
+        @include laptop{
+            font-size: 1.05rem;
+        }
+        @include tablet{
+            font-size: 1rem;
+        }
         @include phone{
             font-size: 0.75rem;
         }
@@ -130,13 +156,16 @@
 .hokkaido-bubble{
     display: flex;
     position: relative;
+    height: 75vh;
+    align-items: center;
+        @include laptop{
+            align-items: center;
+        }
         @include tablet{
             flex-direction: column;
-            height: 75vh;
             justify-content: center;
         }
         @include phone{
-            height: 75vh;
             justify-content: center;
         }
 }
@@ -166,7 +195,7 @@
 }
 
 .hokkaido-name{
-    color: black;
+    color: white;
     font-family: 'Chewy', cursive;
     text-transform: uppercase;
     font-size: 3.8rem;
@@ -183,7 +212,7 @@
     align-items: center;
     height: 75vh;
     width: 14vw;
-    background-color: skyblue;
+    background-color: rgba(color(autumn-dark), 1.0);
         @include laptop{
             width: 20vw;
         }
@@ -196,7 +225,13 @@
 }
 
 .hokkaido-info{
-    font-size: 1rem;
+    font-size: 1.1rem;
+        @include laptop{
+            font-size: 1.05rem;
+        }
+        @include tablet{
+            font-size: 1rem;
+        }
         @include phone{
             font-size: 0.75rem;
         }
@@ -205,8 +240,13 @@
 .fukuoka-bubble{
     display: flex;
     position: relative;
+    height: 75vh;
+    align-items: center;
+        @include laptop{
+            align-items: flex-end;
+            align-items: center;
+        }
         @include tablet{
-            height: 75vh;
             flex-direction: column;
             justify-content: flex-end;
         }
@@ -241,7 +281,7 @@
 }
 
 .fukuoka-name{
-    color: black;
+    color: white;
     font-family: 'Chewy', cursive;
     text-transform: uppercase;
     font-size: 4.2rem;
@@ -258,7 +298,7 @@
     align-items: center;
     height: 75vh;
     width: 14vw;
-    background-color: wheat;
+    background-color: rgba(color(autumn-dark), 1.0);
         @include laptop{
             width: 20vw;
         }
@@ -271,8 +311,19 @@
 }
 
 .fukuoka-info{
-    font-size: 1rem;
+    font-size: 1.1rem;
+        @include laptop{
+            font-size: 1.05rem;
+        }
+        @include laptop{
+            font-size: 1rem;
+        }
         @include phone{
             font-size: 0.75rem;
         }
 }
+
+
+//rectangle opacity 0, height/width 0, display none
+//circle:hover rectanlge - oapcity 1, height 10rem width auto display inline/block 
+//circle:hover opacity 0 blah blah 

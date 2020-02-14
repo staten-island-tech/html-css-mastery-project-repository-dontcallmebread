@@ -808,6 +808,10 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  height: 75vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 780px) {
@@ -825,6 +829,9 @@ h1 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -868,7 +875,7 @@ h1 {
 }
 
 .osaka-name {
-  color: black;
+  color: white;
   font-family: 'Chewy', cursive;
   text-transform: uppercase;
   font-size: 5rem;
@@ -895,7 +902,11 @@ h1 {
           align-items: center;
   height: 75vh;
   width: 14vw;
-  background-color: wheat;
+  background-color: #c72c41;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  display: none;
 }
 
 @media (max-width: 1280px) {
@@ -916,8 +927,34 @@ h1 {
   }
 }
 
+.osaka-circle:hover .osaka-rectangle {
+  opacity: 1;
+  height: 75vh;
+  width: auto;
+  display: block;
+}
+
+.osaka-circle:hover {
+  opacity: 0;
+  height: 0;
+  width: 0;
+  display: none;
+}
+
 .osaka-info {
-  font-size: 1rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 1280px) {
+  .osaka-info {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .osaka-info {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 375px) {
@@ -931,6 +968,18 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  height: 75vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1280px) {
+  .hokkaido-bubble {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media (max-width: 780px) {
@@ -939,7 +988,6 @@ h1 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 75vh;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -948,7 +996,6 @@ h1 {
 
 @media (max-width: 375px) {
   .hokkaido-bubble {
-    height: 75vh;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -995,7 +1042,7 @@ h1 {
 }
 
 .hokkaido-name {
-  color: black;
+  color: white;
   font-family: 'Chewy', cursive;
   text-transform: uppercase;
   font-size: 3.8rem;
@@ -1022,7 +1069,7 @@ h1 {
           align-items: center;
   height: 75vh;
   width: 14vw;
-  background-color: skyblue;
+  background-color: #c72c41;
 }
 
 @media (max-width: 1280px) {
@@ -1044,7 +1091,19 @@ h1 {
 }
 
 .hokkaido-info {
-  font-size: 1rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 1280px) {
+  .hokkaido-info {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .hokkaido-info {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1058,11 +1117,25 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  height: 75vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1280px) {
+  .fukuoka-bubble {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media (max-width: 780px) {
   .fukuoka-bubble {
-    height: 75vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1124,7 +1197,7 @@ h1 {
 }
 
 .fukuoka-name {
-  color: black;
+  color: white;
   font-family: 'Chewy', cursive;
   text-transform: uppercase;
   font-size: 4.2rem;
@@ -1151,7 +1224,7 @@ h1 {
           align-items: center;
   height: 75vh;
   width: 14vw;
-  background-color: wheat;
+  background-color: #c72c41;
 }
 
 @media (max-width: 1280px) {
@@ -1173,7 +1246,19 @@ h1 {
 }
 
 .fukuoka-info {
-  font-size: 1rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 1280px) {
+  .fukuoka-info {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .fukuoka-info {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 375px) {
