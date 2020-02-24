@@ -113,9 +113,7 @@
     width: 14vw; 
     background-color: rgba(color(autumn-dark), 1.0);
     opacity: 0;
-    height: 0;
-    width: 0;
-    display: none; 
+    transition: 2s;
         @include laptop{
             width: 20vw;
         }
@@ -126,19 +124,15 @@
             width: 40vw;
         }
 }
-.osaka-circle:hover .osaka-rectangle{
+
+.osaka-rectangle:hover{
     opacity: 1;
-    height: 75vh;
-    width: auto;
-    display: block;
 }
 
 .osaka-circle:hover{
     opacity: 0;
-    height: 0;
-    width: 0;
-    display: none;
-}
+} 
+
 
 .osaka-info{
     font-size: 1.1rem;

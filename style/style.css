@@ -904,9 +904,8 @@ h1 {
   width: 14vw;
   background-color: #c72c41;
   opacity: 0;
-  height: 0;
-  width: 0;
-  display: none;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 @media (max-width: 1280px) {
@@ -927,18 +926,12 @@ h1 {
   }
 }
 
-.osaka-circle:hover .osaka-rectangle {
+.osaka-rectangle:hover {
   opacity: 1;
-  height: 75vh;
-  width: auto;
-  display: block;
 }
 
 .osaka-circle:hover {
   opacity: 0;
-  height: 0;
-  width: 0;
-  display: none;
 }
 
 .osaka-info {
