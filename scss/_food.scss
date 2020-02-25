@@ -60,12 +60,14 @@
     position: relative;
     height: 75vh;
     align-items: center;
+        @include laptop{
+            align-items: flex-start;
+        }
         @include tablet{
             flex-direction: column;
         }
         @include phone{
-            flex-direction: row;
-            align-items: flex-start;
+            flex-direction: column;
         }
 }
 
@@ -115,7 +117,9 @@
     opacity: 0;
     transition: 2s;
         @include laptop{
+            opacity: 1;
             width: 20vw;
+            align-items: flex-end;
         }
         @include tablet{
             width: 28vw;
@@ -138,6 +142,8 @@
     font-size: 1.1rem;
         @include laptop{
             font-size: 1.05rem;
+            width: 16rem;
+            height: 35rem;
         }
         @include tablet{
             font-size: 1rem;
@@ -153,7 +159,7 @@
     height: 75vh;
     align-items: center;
         @include laptop{
-            align-items: center;
+            align-items: flex-start;
         }
         @include tablet{
             flex-direction: column;
@@ -207,6 +213,8 @@
     height: 75vh;
     width: 14vw;
     background-color: rgba(color(autumn-dark), 1.0);
+    opacity: 0;
+    transition: 2s;
         @include laptop{
             width: 20vw;
         }
@@ -217,6 +225,14 @@
             width: 40vw;
         }
 }
+
+.hokkaido-rectangle:hover{
+    opacity: 1;
+}
+
+.hokkaido-circle:hover{
+    opacity: 0;
+} 
 
 .hokkaido-info{
     font-size: 1.1rem;
@@ -237,8 +253,7 @@
     height: 75vh;
     align-items: center;
         @include laptop{
-            align-items: flex-end;
-            align-items: center;
+            align-items: flex-start;
         }
         @include tablet{
             flex-direction: column;
@@ -293,6 +308,8 @@
     height: 75vh;
     width: 14vw;
     background-color: rgba(color(autumn-dark), 1.0);
+    opacity: 0;
+    transition: 2s;
         @include laptop{
             width: 20vw;
         }
@@ -303,6 +320,14 @@
             width: 40vw;
         }
 }
+
+.fukuoka-rectangle:hover{
+    opacity: 1;
+}
+
+.fukuoka-circle:hover{
+    opacity: 0;
+} 
 
 .fukuoka-info{
     font-size: 1.1rem;
