@@ -27,6 +27,9 @@
     justify-content: space-evenly;
     height: 90vh;
     width: 99%;
+        @include tablet{
+            margin-top: 1rem;
+        }
 }
 
 .food-title{
@@ -48,7 +51,7 @@
             font-size: 6rem;
         }
         @include tablet{
-            font-size: 5rem;
+            font-size: 6rem;
         }
         @include phone{
             font-size: 2.8rem;
@@ -117,12 +120,17 @@
     opacity: 0;
     transition: 2s;
         @include laptop{
+            margin-top: 15vh;
             opacity: 1;
             width: 20vw;
             align-items: flex-end;
+            height: 60vh;
         }
         @include tablet{
             width: 28vw;
+            align-items: initial;
+            height: 70vh;
+            margin-top: 7rem;
         }
         @include phone{
             width: 40vw;
@@ -141,9 +149,9 @@
 .osaka-info{
     font-size: 1.1rem;
         @include laptop{
-            font-size: 1.05rem;
+            font-size: 0.85rem;
             width: 16rem;
-            height: 35rem;
+            height: 27rem;
         }
         @include tablet{
             font-size: 1rem;
@@ -163,7 +171,7 @@
         }
         @include tablet{
             flex-direction: column;
-            justify-content: center;
+            align-items: flex-start;
         }
         @include phone{
             justify-content: center;
@@ -216,7 +224,11 @@
     opacity: 0;
     transition: 2s;
         @include laptop{
+            align-items: flex-end;
+            opacity: 1;
             width: 20vw;
+            height: 60vh;
+            margin-top: 15vh;
         }
         @include tablet{
             width: 28vw;
@@ -237,7 +249,7 @@
 .hokkaido-info{
     font-size: 1.1rem;
         @include laptop{
-            font-size: 1.05rem;
+            font-size: 0.85rem;
         }
         @include tablet{
             font-size: 1rem;
@@ -257,7 +269,7 @@
         }
         @include tablet{
             flex-direction: column;
-            justify-content: flex-end;
+            align-items: flex-start;
         }
         @include phone{
             flex-direction: row;
@@ -311,7 +323,11 @@
     opacity: 0;
     transition: 2s;
         @include laptop{
+            align-items: flex-end;
+            opacity: 1;
             width: 20vw;
+            height: 60vh;
+            margin-top: 15vh;
         }
         @include tablet{
             width: 28vw;
@@ -332,17 +348,9 @@
 .fukuoka-info{
     font-size: 1.1rem;
         @include laptop{
-            font-size: 1.05rem;
-        }
-        @include laptop{
-            font-size: 1rem;
+            font-size: 0.85rem;
         }
         @include phone{
             font-size: 0.75rem;
         }
 }
-
-
-//rectangle opacity 0, height/width 0, display none
-//circle:hover rectanlge - oapcity 1, height 10rem width auto display inline/block 
-//circle:hover opacity 0 blah blah 

@@ -762,6 +762,12 @@ h1 {
   width: 99%;
 }
 
+@media (max-width: 780px) {
+  .food-bubbles {
+    margin-top: 1rem;
+  }
+}
+
 .food-title {
   margin-bottom: -6rem;
   margin-top: -4rem;
@@ -793,7 +799,7 @@ h1 {
 
 @media (max-width: 780px) {
   .ft {
-    font-size: 5rem;
+    font-size: 6rem;
   }
 }
 
@@ -915,17 +921,24 @@ h1 {
 
 @media (max-width: 1280px) {
   .osaka-rectangle {
+    margin-top: 15vh;
     opacity: 1;
     width: 20vw;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    height: 60vh;
   }
 }
 
 @media (max-width: 780px) {
   .osaka-rectangle {
     width: 28vw;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    height: 70vh;
+    margin-top: 7rem;
   }
 }
 
@@ -949,9 +962,9 @@ h1 {
 
 @media (max-width: 1280px) {
   .osaka-info {
-    font-size: 1.05rem;
+    font-size: 0.85rem;
     width: 16rem;
-    height: 35rem;
+    height: 27rem;
   }
 }
 
@@ -992,9 +1005,9 @@ h1 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -1081,7 +1094,13 @@ h1 {
 
 @media (max-width: 1280px) {
   .hokkaido-rectangle {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    opacity: 1;
     width: 20vw;
+    height: 60vh;
+    margin-top: 15vh;
   }
 }
 
@@ -1111,7 +1130,7 @@ h1 {
 
 @media (max-width: 1280px) {
   .hokkaido-info {
-    font-size: 1.05rem;
+    font-size: 0.85rem;
   }
 }
 
@@ -1152,9 +1171,9 @@ h1 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -1244,7 +1263,13 @@ h1 {
 
 @media (max-width: 1280px) {
   .fukuoka-rectangle {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    opacity: 1;
     width: 20vw;
+    height: 60vh;
+    margin-top: 15vh;
   }
 }
 
@@ -1274,13 +1299,7 @@ h1 {
 
 @media (max-width: 1280px) {
   .fukuoka-info {
-    font-size: 1.05rem;
-  }
-}
-
-@media (max-width: 1280px) {
-  .fukuoka-info {
-    font-size: 1rem;
+    font-size: 0.85rem;
   }
 }
 
