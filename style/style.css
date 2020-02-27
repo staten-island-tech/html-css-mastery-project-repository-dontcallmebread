@@ -843,6 +843,7 @@ h1 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    left: 9rem;
   }
 }
 
@@ -934,17 +935,18 @@ h1 {
 @media (max-width: 780px) {
   .osaka-rectangle {
     width: 28vw;
-    -webkit-box-align: initial;
-        -ms-flex-align: initial;
-            align-items: initial;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 70vh;
-    margin-top: 7rem;
+    margin-top: 8rem;
   }
 }
 
 @media (max-width: 375px) {
   .osaka-rectangle {
     width: 40vw;
+    opacity: 0;
   }
 }
 
@@ -970,7 +972,7 @@ h1 {
 
 @media (max-width: 780px) {
   .osaka-info {
-    font-size: 1rem;
+    font-size: 0.85rem;
   }
 }
 
@@ -1107,12 +1109,18 @@ h1 {
 @media (max-width: 780px) {
   .hokkaido-rectangle {
     width: 28vw;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    height: 70vh;
+    margin-top: 8rem;
   }
 }
 
 @media (max-width: 375px) {
   .hokkaido-rectangle {
     width: 40vw;
+    opacity: 0;
   }
 }
 
@@ -1136,7 +1144,8 @@ h1 {
 
 @media (max-width: 780px) {
   .hokkaido-info {
-    font-size: 1rem;
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -1183,6 +1192,7 @@ h1 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    right: 9rem;
   }
 }
 
@@ -1276,12 +1286,18 @@ h1 {
 @media (max-width: 780px) {
   .fukuoka-rectangle {
     width: 28vw;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    height: 70vh;
+    margin-top: 8rem;
   }
 }
 
 @media (max-width: 375px) {
   .fukuoka-rectangle {
     width: 40vw;
+    opacity: 0;
   }
 }
 
@@ -1303,10 +1319,43 @@ h1 {
   }
 }
 
+@media (max-width: 780px) {
+  .fukuoka-info {
+    font-size: 0.847rem;
+    margin-bottom: 2rem;
+  }
+}
+
 @media (max-width: 375px) {
   .fukuoka-info {
     font-size: 0.75rem;
   }
+}
+
+.traditions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.traditions-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.tt {
+  font-family: 'Trade Winds', cursive;
+  font-size: 6rem;
 }
 
 body {

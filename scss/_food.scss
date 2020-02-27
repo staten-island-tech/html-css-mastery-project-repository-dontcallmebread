@@ -71,6 +71,7 @@
         }
         @include phone{
             flex-direction: column;
+            left: 9rem;
         }
 }
 
@@ -128,12 +129,13 @@
         }
         @include tablet{
             width: 28vw;
-            align-items: initial;
+            align-items: center;
             height: 70vh;
-            margin-top: 7rem;
+            margin-top: 8rem;
         }
         @include phone{
             width: 40vw;
+            opacity: 0;
         }
 }
 
@@ -154,7 +156,7 @@
             height: 27rem;
         }
         @include tablet{
-            font-size: 1rem;
+            font-size: 0.85rem;
         }
         @include phone{
             font-size: 0.75rem;
@@ -232,9 +234,13 @@
         }
         @include tablet{
             width: 28vw;
+            align-items: flex-end;
+            height: 70vh;
+            margin-top: 8rem;
         }
         @include phone{
             width: 40vw;
+            opacity: 0;
         }
 }
 
@@ -252,7 +258,8 @@
             font-size: 0.85rem;
         }
         @include tablet{
-            font-size: 1rem;
+            font-size: 0.85rem;
+            margin-bottom: 2rem;
         }
         @include phone{
             font-size: 0.75rem;
@@ -273,6 +280,7 @@
         }
         @include phone{
             flex-direction: row;
+            right: 9rem;
         }
 }
 
@@ -331,9 +339,13 @@
         }
         @include tablet{
             width: 28vw;
+            align-items: flex-end;
+            height: 70vh;
+            margin-top: 8rem;
         }
         @include phone{
             width: 40vw;
+            opacity: 0;
         }
 }
 
@@ -349,6 +361,10 @@
     font-size: 1.1rem;
         @include laptop{
             font-size: 0.85rem;
+        }
+        @include tablet{
+            font-size: 0.847rem;
+            margin-bottom: 2rem;
         }
         @include phone{
             font-size: 0.75rem;
