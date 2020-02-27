@@ -1359,6 +1359,11 @@ h1 {
   font-size: 6rem;
 }
 
+.photos {
+  width: 20vw;
+  height: 30vh;
+}
+
 body {
   background-color: #fae3d9;
 }
