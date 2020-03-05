@@ -1,40 +1,98 @@
 .traditions{
-    $border-color: rgba(color(black), 1.0);
     display: flex;
     height: 100vh;
     width: 100vw;
     background-color: white;
     margin: 1rem 0;
     align-items: center;
-    border: 0 solid $border-color;
-    border-left: 2rem solid $border-color;
+        @include laptop{ 
+            margin: 0;
+        }
 }
 
 .traditions-title{
     display: flex;
     align-items: center;
-    width: 30%;
+    width: 100%;
     height: 20rem;
     margin-left: 5rem;
+        @include laptop{
+            width: 32%;
+        }
+        @include tablet{
+            margin-left: 7rem;
+        }
+        @include phone{
+            margin-left: 4.5rem;
+            margin-bottom: 2rem;
+        }
 }
 
 .tt{
     font-family: 'Trade Winds', cursive;
     font-size: 6rem;
+        @include laptop{
+            font-size: 4.75rem;
+        }
+        @include tablet{
+            font-size: 4.4rem;
+        }
+        @include phone{
+            font-size: 4rem;
+        }
 }
 
 .photos{
     width: 22vw;
     height: 30vh;
+        @include laptop{
+            width: 23vw;
+            height: 27vh;
+        }
+        @include tablet{
+            width: 22vw;
+            height: 16vh;
+        }
+        @include phone{
+            width: 20vw;
+            height: 12vh;
+        }
+}
+
+.photo-circle{
+    @include laptop{
+        margin-left: -5rem;
+    }
+    @include tablet{
+        margin-left: -3rem;
+    }
 }
 
 .midpic{
     width: 20vw;
+        @include laptop{
+            height: 24vh;
+            width: 18vw;
+        }
+        @include tablet{ 
+            height: 32vh;
+            width: 34vw;
+        }
+        @include phone{
+            height: 12vh;
+            width: 28vw;
+        }
 }
 
 .middle{
     display: flex;
-    margin: 0 0 0 3rem;
+    margin: 0 0 0 3rem; 
+        @include tablet{
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 }
 
 .top-row{
@@ -42,12 +100,41 @@
     justify-content: space-around;
     width: 90%;
     margin: 2rem 0 2rem 6rem; 
+        @include laptop{
+            margin-top: 2rem;
+            margin-bottom: 0;
+        }
+        @include tablet{
+            margin-left: 3.75rem;
+            margin-bottom: -2rem;
+        }
+        @include phone{
+            width: 80%;
+            margin-left: 3.4rem;
+            margin-top: 2rem;
+        }
 }
 
 .mid-row{
     display: flex;
     justify-content: space-around;
     width: 62%;
+    @include laptop{ 
+        margin-top: 2rem;
+        width: 70%;
+        justify-content: space-around;
+    }
+    @include tablet{
+        justify-content: space-around;
+        margin-top: -3rem;
+        margin-bottom: 7rem;
+        margin-left: -3rem;
+        width: 90%;
+    }
+    @include phone{
+        width: 80%;
+        margin-left: -4.75rem;
+    }
 }
 
 .bottom-row{
@@ -55,5 +142,16 @@
     justify-content: space-around;
     width: 90%;
     margin: 0 2rem 2rem 6rem;
+        @include laptop{
+            margin-top: -2rem;
+            margin-bottom: 2rem;
+        }
+        @include tablet{
+            margin-left: 3.75rem;
+        }
+        @include phone{
+            width: 80%;
+            margin-left: 3.4rem;
+        }
 }
 
