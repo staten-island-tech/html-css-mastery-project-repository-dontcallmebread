@@ -5,15 +5,20 @@
     background-color: white;
     margin: 1rem 0;
     align-items: center;
+    border-left: black 3rem;
+    border: black 1rem;
         @include laptop{ 
             margin: 0;
+        }
+        @include phone{
+            width: 100%;
         }
 }
 
 .traditions-title{
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 28%;
     height: 20rem;
     margin-left: 5rem;
         @include laptop{
@@ -21,10 +26,12 @@
         }
         @include tablet{
             margin-left: 7rem;
+            width: 95%;
         }
         @include phone{
-            margin-left: 4.5rem;
+            margin-left: 0rem;
             margin-bottom: 2rem;
+            width: 69%;
         }
 }
 
@@ -54,14 +61,14 @@
             height: 16vh;
         }
         @include phone{
-            width: 20vw;
-            height: 12vh;
+            width: 22vw;
+            height: 11vh;
         }
 }
 
 .photo-circle{
     @include laptop{
-        margin-left: -5rem;
+        margin-left: -3rem;
     }
     @include tablet{
         margin-left: -3rem;
@@ -71,12 +78,12 @@
 .midpic{
     width: 20vw;
         @include laptop{
-            height: 24vh;
+            height: 22vh;
             width: 18vw;
         }
         @include tablet{ 
-            height: 32vh;
-            width: 34vw;
+            height: 18vh;
+            width: 30vw;
         }
         @include phone{
             height: 12vh;
@@ -86,7 +93,7 @@
 
 .middle{
     display: flex;
-    margin: 0 0 0 3rem; 
+    margin: 0 0 0 1rem; 
         @include tablet{
             width: 100%;
             flex-direction: column;
@@ -99,7 +106,7 @@
     display: flex;
     justify-content: space-around;
     width: 90%;
-    margin: 2rem 0 2rem 6rem; 
+    margin: 2rem 0 2rem 4rem; 
         @include laptop{
             margin-top: 2rem;
             margin-bottom: 0;
@@ -110,7 +117,7 @@
         }
         @include phone{
             width: 80%;
-            margin-left: 3.4rem;
+            margin-left: 3.7rem;
             margin-top: 2rem;
         }
 }
@@ -118,9 +125,10 @@
 .mid-row{
     display: flex;
     justify-content: space-around;
-    width: 62%;
+    width: 64%;
+    margin-left: 1.25rem;
     @include laptop{ 
-        margin-top: 2rem;
+        margin-top: 2.5rem;
         width: 70%;
         justify-content: space-around;
     }
@@ -128,12 +136,12 @@
         justify-content: space-around;
         margin-top: -3rem;
         margin-bottom: 7rem;
-        margin-left: -3rem;
+        margin-left: 1rem;
         width: 90%;
     }
     @include phone{
         width: 80%;
-        margin-left: -4.75rem;
+        margin-left: 0;
     }
 }
 
@@ -141,7 +149,7 @@
     display: flex;
     justify-content: space-around;
     width: 90%;
-    margin: 0 2rem 2rem 6rem;
+    margin: 0 2rem 2rem 4rem;
         @include laptop{
             margin-top: -2rem;
             margin-bottom: 2rem;
@@ -151,7 +159,7 @@
         }
         @include phone{
             width: 80%;
-            margin-left: 3.4rem;
+            margin-left: 3.7rem;
         }
 }
 
